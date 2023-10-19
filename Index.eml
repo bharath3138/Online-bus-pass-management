@@ -1,0 +1,224 @@
+Delivered-To: bharathbalor66@gmail.com
+Received: by 2002:a05:640c:18c9:b0:1de:ee0b:d377 with SMTP id h9csp276842eit;
+        Wed, 18 Oct 2023 22:57:11 -0700 (PDT)
+X-Received: by 2002:a19:6702:0:b0:507:9f0a:60e5 with SMTP id b2-20020a196702000000b005079f0a60e5mr555075lfc.43.1697695031105;
+        Wed, 18 Oct 2023 22:57:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1697695031; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wKZaSO2WdBKhvYUYzByg0g6YfZ3WZ+dHgrAvDIerL5A+nl7tZbx9Fnl0A5TR39O4cD
+         yEfKxiEzr/yHRgFt3bf0v52XtLLeng9L2K9ZneWfPG8/GdIrRvS5LSmj+K6zre82p8z8
+         HugzZUHcrM5GyDvNxJVOa/TCcWVt1GAdisquQq+CrUB/tcLEkR0Tlghr6K3wq6N+X9Vf
+         Zk2zr2ep3aZqQSMl9stVCF883PLwu3zF+lbsW7rj0HfXIUHtcrKO9+lk7aWSX2uvQJo7
+         J2a3yaqDP16HlRmSFmQpuZD2Vmey9DyEs0lNXZ/CY69dsNqz60AO8o4eEDBw44HwCLGV
+         duSQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=+on1YS2LtSzA6KxzpyNkF7xAB6UIP2bRHPeQDeHC744=;
+        fh=CETAkH1cCtX3JmVw4PySpOITpY1yj1FLzoGazN6HAFQ=;
+        b=mhUFeBYhEP6+2ZBe/5+xsqGPTGSEEp1K7DpKBiNyTg4jZkTsBFL/J84DgW5Sn3BGoS
+         b09dde8wlHW7xanYE/tpcFN5M9hboJ4C0GGYhF3MP82l94cM6yo87RUKCtiqb5korf0b
+         okUcarcbQdGofwwqjLI9ZLFz2oMAdEV8onAQgrp36j2X+qwk+bRRU4DPodrpFohhOQA4
+         a0AOk2H4BRjR6adySCNmccAOgdruDEfG+76g0SJ4Wnjr+2q3NBo1oSGEEA8YBmoiPkmy
+         XWxT7q/P9MLIl6zCkm4zpugpL9dfsRgb1DXzdVOx+H/kcqZrvIr19b26YoFYIwUwdSFk
+         WiTQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=FfH8LH15;
+       spf=pass (google.com: domain of alwinkumar2002@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=alwinkumar2002@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <alwinkumar2002@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id j22-20020a05651231d600b00507adc735e2sor1624935lfe.20.2023.10.18.22.57.10
+        for <bharathbalor66@gmail.com>
+        (Google Transport Security);
+        Wed, 18 Oct 2023 22:57:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alwinkumar2002@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=FfH8LH15;
+       spf=pass (google.com: domain of alwinkumar2002@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=alwinkumar2002@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1697695030; x=1698299830; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=+on1YS2LtSzA6KxzpyNkF7xAB6UIP2bRHPeQDeHC744=;
+        b=FfH8LH15WSCZdgp2z6M+z/8wi86jtr6xOrsYyp5PILeLxkzmvZTrna61/awrMu25d2
+         VbzTwpP9+ZmsaE6wofswgpzc5dkZx2be/I5+Dfr448kyxPTjxvStstzWjGFhiSZ1GQIl
+         bLXBuFR0ZdCRjnQC9b0ha+rQ5PpUopXKEMBex0RGkOw+AhKyE/wBQtcvGzv9a2u8gu6k
+         i0fY4lNNTTSWupU/jfco2618n+FA337VlTazsAfQD0oiaWef51MU1imTZSaJGb1hYr0P
+         QhMOabH4ahlmEre02OT2u8FuiyYAHIA9P0VGhYNXz6vpC14eC2e+SsxsNnVSVwy2gnao
+         AbJA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1697695030; x=1698299830;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=+on1YS2LtSzA6KxzpyNkF7xAB6UIP2bRHPeQDeHC744=;
+        b=IdX1hunv3ZXHQ8AHxujrKMbqpYBTti8vrLnBjg52QmY+I8ekTsHIAa0nahJnwv3gjk
+         IVunNbVVTHsV/Ouj1W2AdbpLV0sXJKuCU/clviVJWwg1PcE3WUj/d4WzxGjQKtIHbDb4
+         HMGYX6UlB9wA5D4eJQVS/yaMiN6/6+JGzBogSW12P6eC3IwnxODlOPmjgV6NLW9P9JYg
+         lK8e2R96/cL9N0IvipDhpD3MtaXDHdk4RyhQzkujFzLhUWzgWidoBt44uJqaFdJ062Co
+         891gJlYcF7whFPkv9RbJJ3WY3mDm0JqoGZZZSBSUiVu9iwmVA3TmdF/h2OnQgNOdEyiW
+         ow0Q==
+X-Gm-Message-State: AOJu0Yzs2ETv7t9DNbWnVdsplI/su65ETdGn7xoC1u2xNZwMpE8ZX4bb
+	8mpdwX9+frbpcOSPoT8PnYv3dTWhAkSq8cY7tFgkN+Q/
+X-Google-Smtp-Source: AGHT+IGYRqnyHDGFUNXHGER3YhofmLJErjG9OJyTYzzkpmXSKnUEqYOGjvDSnmWr/k0bJjQyV5Lg0uWJCXbrDMC8XCg=
+X-Received: by 2002:a05:6512:41d:b0:507:b935:9f60 with SMTP id
+ u29-20020a056512041d00b00507b9359f60mr674547lfk.57.1697695029990; Wed, 18 Oct
+ 2023 22:57:09 -0700 (PDT)
+MIME-Version: 1.0
+From: 5004- Alwin Selva Kumar A <alwinkumar2002@gmail.com>
+Date: Thu, 19 Oct 2023 11:26:58 +0530
+Message-ID: <CALCxPQDjhPhAOi53OUE54MT1o4H3yUVM_WLvZcHVa=vPgWri8w@mail.gmail.com>
+Subject: Index
+To: "bharathbalor66@gmail.com" <bharathbalor66@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000003318a806080b6dbd"
+
+--0000000000003318a806080b6dbd
+Content-Type: text/plain; charset="UTF-8"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet"
+href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet"
+href="{{url_for('static',filename='myfont/css/all.min.css')}}">
+    <script
+src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+     <style>
+        .shadow{
+            box-shadow:3px 3px 10px black;
+            padding:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-top:100px">
+        <div class="col-md-offset-1 col-md-10" >
+            <div class="col-md-offset-3 col-md-5">
+                <div class="shadow">
+                <form action="/login" method="POST" autocomplete="off">
+                    <h3 class="page-header text-primary">Login (SQLite)</h3>
+
+                     {% with messages =
+get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category,message in messages %}
+                        <div class="alert
+alert-{{category}}">{{message}}</div>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" name="name" class="form-control"
+required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password"
+class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn
+btn-success btn-block">
+                        <a href="{{url_for('register')}}" class="btn
+btn-primary btn-block">Register</a>
+                    </div>
+                </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $(".alert").hide(3000)
+    });
+</script>
+
+--0000000000003318a806080b6dbd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><div dir=3D"auto">&lt;!DOCTYPE html&gt;</div><div dir=3D"=
+auto">&lt;html lang=3D&quot;en&quot;&gt;</div><div dir=3D"auto">&lt;head&gt=
+;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;meta charset=3D&quot;UTF-8&quot;=
+&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;title&gt;Index&lt;/title&gt;<=
+/div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;link rel=3D&quot;stylesheet&quot; =
+href=3D&quot;{{url_for(&#39;static&#39;,filename=3D&#39;css/bootstrap.min.c=
+ss&#39;)}}&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;link rel=3D&q=
+uot;stylesheet&quot; href=3D&quot;{{url_for(&#39;static&#39;,filename=3D&#3=
+9;myfont/css/all.min.css&#39;)}}&quot;&gt;</div><div dir=3D"auto">=C2=A0 =
+=C2=A0 &lt;script src=3D&quot;{{url_for(&#39;static&#39;,filename=3D&#39;js=
+/jquery.min.js&#39;)}}&quot;&gt;&lt;/script&gt;</div><div dir=3D"auto">=C2=
+=A0 =C2=A0 =C2=A0&lt;style&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 .shadow{</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 box-shadow:3px 3px 10px black;</div><div dir=3D"auto">=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 padding:30px;</div><div dir=3D"auto">=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 }</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;/style&gt;</di=
+v><div dir=3D"auto">&lt;/head&gt;</div><div dir=3D"auto">&lt;body&gt;</div>=
+<div dir=3D"auto">=C2=A0 =C2=A0 &lt;div class=3D&quot;container&quot; style=
+=3D&quot;margin-top:100px&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 &lt;div class=3D&quot;col-md-offset-1 col-md-10&quot; &gt;</d=
+iv><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;div clas=
+s=3D&quot;col-md-offset-3 col-md-5&quot;&gt;</div><div dir=3D"auto">=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;div class=3D&quot;shad=
+ow&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 &lt;form action=3D&quot;/login&quot; method=3D&quot;POST&=
+quot; autocomplete=3D&quot;off&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;h3 class=3D=
+&quot;page-header text-primary&quot;&gt;Login (SQLite)&lt;/h3&gt;</div><div=
+ dir=3D"auto"><br></div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0{% with messages =3D get_flash=
+ed_messages(with_categories=3Dtrue) %}</div><div dir=3D"auto">=C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 {% if messages %}</div><div dir=
+=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 {% for category,message in messages %}</div><div dir=3D"auto">=C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 &lt;div class=3D&quot;alert alert-{{category}}&quot;&gt;{{message}}&lt;=
+/div&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 {% endfor %}</div><div dir=3D"auto">=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 {% endif %}</div><div dir=3D"=
+auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 {% endwith %}=
+</div><div dir=3D"auto"><br></div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;div class=3D&quot;form=
+-group&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;label&gt;Username&lt;/=
+label&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;input type=3D&quot;text&quot;=
+ name=3D&quot;name&quot; class=3D&quot;form-control&quot; required&gt;</div=
+><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 &lt;/div&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;div class=3D&quot;form-gr=
+oup&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;label&gt;Password&lt;/lab=
+el&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;input type=3D&quot;password&quot=
+; name=3D&quot;password&quot; class=3D&quot;form-control&quot; required&gt;=
+</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 &lt;/div&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;div class=3D&quot;=
+form-group&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;input type=3D&quot=
+;submit&quot; value=3D&quot;Login&quot; class=3D&quot;btn btn-success btn-b=
+lock&quot;&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;a href=3D&quot;{{url_f=
+or(&#39;register&#39;)}}&quot; class=3D&quot;btn btn-primary btn-block&quot=
+;&gt;Register&lt;/a&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;/div&gt;</div><div dir=3D"aut=
+o">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 &lt;/form&gt;</d=
+iv><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 &lt;/div&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 &lt;/div&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 &lt;/div&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 &lt;/div&gt;</=
+div><div dir=3D"auto">&lt;/body&gt;</div><div dir=3D"auto">&lt;/html&gt;</d=
+iv><div dir=3D"auto">&lt;script&gt;</div><div dir=3D"auto">=C2=A0 =C2=A0 $(=
+document).ready(function(){</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 $(&quot;.alert&quot;).hide(3000)</div><div dir=3D"auto">=C2=A0 =C2=A0 }=
+);</div><div dir=3D"auto">&lt;/script&gt;</div></div>
+
+--0000000000003318a806080b6dbd--
